@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/fixedImageView"
+        android:layout_width="513dp"
+        android:layout_height="189dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:src="@drawable/download" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fixedImageView"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Input fields for various parameters -->
+            <EditText
+                android:id="@+id/altitudeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter altitude (meters)"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/MEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter cruise speed (Mach number)"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/T3EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter turbine inlet temperature (T3 in K)"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/AFRatioEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter theoretical fuel/air ratio"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etaCompressorEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter compressor efficiency"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etaTurbineEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter turbine efficiency"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etaIntakeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter intake efficiency"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etaNozzleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Enter nozzle efficiency"
+                android:inputType="numberDecimal"
+                android:minHeight="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etaMechanicalEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter mechanical efficiency"
+                android:inputType="numberDecimal"
+                android:minHeight="30dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/etaCombustionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter combustion efficiency"
+                android:inputType="numberDecimal"
+                android:minHeight="30dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/combustionPressureLossEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter combustion pressure loss (%)"
+                android:inputType="numberDecimal"
+                android:minHeight="30dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/PiCEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter compressor pressure ratio"
+                android:inputType="numberDecimal"
+                android:minHeight="30dp" />
+
+            <EditText
+                android:id="@+id/calorificValueEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter calorific value of fuel (kJ/kg)"
+                android:inputType="numberDecimal"
+                android:minHeight="30dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- Button to trigger calculation -->
+
+            <!-- Display calculated results -->
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="380dp"
+                android:layout_height="384dp"
+                android:padding="10dp"
+                android:text=""
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/vishalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VISHAL S"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/vishalTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="210101048"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/vishalTextView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Propulsion-1"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/vishalTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AE19502"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/vishalTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turbo Jet Engine Problem (Assignment-2)"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+</RelativeLayout>

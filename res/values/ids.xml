@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="altitudeEditText" type="id" />
+    <item name="T3EditText" type="id" />
+    <item name="etaCompressorEditText" type="id" />
+    <item name="AFRatioEditText" type="id" />
+    <item name="MEditText" type="id" />
+    <item name="etaIntakeEditText" type="id" />
+    <item name="etaNozzleEditText" type="id" />
+    <item name="etaTurbineEditText" type="id" />
+    <item name="etaMechanicalEditText" type="id" />
+    <item name="etaCombustionEditText" type="id" />
+    <item name="combustionPressureLossEditText" type="id" />
+    <item name="calculateButton" type="id" />
+    <item name="PiCEditText" type="id" />
+    <item name="resultTextView" type="id" />
+</resources>
