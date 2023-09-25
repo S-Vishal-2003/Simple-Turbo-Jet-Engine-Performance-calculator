@@ -1,4 +1,4 @@
-Turbojet Performance Calculator
+𝐓𝐮𝐫𝐛𝐨𝐣𝐞𝐭 𝐏𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞 𝐂𝐚𝐥𝐜𝐮𝐥𝐚𝐭𝐨𝐫
 
 This project hosts a Turbojet Performance Calculator, an Android application developed using Kotlin in Android Studio. The application calculates specific thrust and specific fuel consumption for a simple turbojet engine based on provided design parameters and efficiency factors.
 
