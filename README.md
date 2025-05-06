@@ -16,33 +16,16 @@ cd turbojet-performance-calculator
 Open the project in Android Studio.
 
 Build and run the application on your Android device or emulator.
+![application homepage](https://github.com/user-attachments/assets/9880625c-5915-4495-81e9-0fab96f31d4b)
 
 Input the required design parameters and efficiency factors.
+![application inputs](https://github.com/user-attachments/assets/052e9d91-b72e-4a94-bf0c-b94f8e94baf2)
 
 Calculate specific thrust and specific fuel consumption for the turbojet engine.
+![application results](https://github.com/user-attachments/assets/e4b0d2ac-565e-4f9c-9a50-7ad4f3f3f519)
 
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-Fork the repository.
-
-Create a new branch for your feature:
-
-bash
-Copy code
-git checkout -b feature/your-feature-name
-Make your modifications and commit them:
-
-bash
-Copy code
-git add .
-git commit -m "Added feature: your feature description"
-Push your branch to your fork on GitHub:
-
-bash
-Copy code
-git push origin feature/your-feature-name
-Open a pull request on the original repository.
 
 License
 This project is licensed under the MIT License.
