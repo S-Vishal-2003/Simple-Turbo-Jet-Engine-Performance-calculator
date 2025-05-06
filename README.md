@@ -9,10 +9,7 @@ Integration of Aerospace Principles: Showcases the application of aerospace engi
 Usage
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your_username/turbojet-performance-calculator.git
-cd turbojet-performance-calculator
+turbojet-performance-calculator
 Open the project in Android Studio.
 
 Build and run the application on your Android device or emulator.
